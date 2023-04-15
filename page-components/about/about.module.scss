@@ -1,0 +1,28 @@
+.about_container {
+    position: relative;
+    background-color: #000000;
+    margin: 0;
+    width: 100%;
+    min-height: 100vh;
+    color: #fff;
+    padding: 10px 25px;
+    font-family: 'Poppins', sans-serif;
+
+    .about_wrapper {
+        margin-left: 150px;
+
+        .header_cont {
+            padding: 2rem;
+
+            h1 {
+                font-size: 4rem;
+                margin: 0;
+            }
+
+            p {
+                font-size: 16px;
+                margin: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,92 @@
+.proj_page_container {
+    position: relative;
+    background-color: #000000;
+    margin: 0;
+    width: 100%;
+    min-height: 100vh;
+    color: #fff;
+    padding: 10px 25px;
+    font-family: 'Poppins', sans-serif;
+
+    .proj_wrapper {
+        margin-left: 150px;
+
+        .header_cont {
+            padding: 2rem;
+
+            h1 {
+                font-size: 4rem;
+                margin: 0;
+            }
+
+            p {
+                font-size: 16px;
+                margin: 0;
+            }
+        }
+
+        .proj_cont {
+            padding: 0 2rem;
+
+            .proj_box {
+                width: 60%;
+                border-radius: 0.25rem;
+                border: 1px solid #696969;
+                padding: 1rem;
+                margin: 0.5rem 0;
+                transition: all ease-out 0.2s;
+
+                &:hover {
+                    background-color: #111111;
+                    transform: translateX(0.25rem);
+                }
+
+                span {
+                    font-weight: 600;
+                }
+
+                p {
+                    margin: 0;
+                    padding: 10px 0;
+                    font-size: 14px;
+                }
+
+                .box_intro {
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    .proj_ex {
+                        padding: 0px;
+
+                        h4 {
+                            font-size: 1.1rem;
+                            margin: 0;
+                        }
+
+                        p {
+                            font-weight: 200;
+                            font-size: 0.8rem;
+                            margin: 0;
+                        }
+                    }
+
+                    .proj_links {
+                        .link {
+                            padding: 5px 10px;
+                            border-radius: 5px;
+                            margin: 0 0.25rem;
+                            transition: all ease-out 0.2s;
+
+                            &:hover {
+                                background-color: #343434;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}

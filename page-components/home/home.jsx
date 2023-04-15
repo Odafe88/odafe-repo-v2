@@ -4,7 +4,7 @@ import { Header } from '../../components'
 
 const HomePage = () => {
     return (
-        <div className={styles.home_container}>
+        <section className={styles.home_container}>
 
             <div className={styles.home_intro}>
                 <div>
@@ -15,7 +15,7 @@ const HomePage = () => {
                 </div>
                 <Header />
             </div>
-        </div>
+        </section>
     )
 }
 
