@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from "./home.module.scss"
-import { Header } from '../../components'
+import { Header, Footer } from '../../components'
 
 const HomePage = () => {
     return (
@@ -15,6 +15,7 @@ const HomePage = () => {
                 </div>
                 <Header />
             </div>
+            <Footer />
         </section>
     )
 }

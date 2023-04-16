@@ -39,7 +39,7 @@ const ProjectsPage = () => {
                     {
                         projects.map((project) => {
                             return (
-                                <section className={styles.proj_box}>
+                                <section key={project.name} className={styles.proj_box}>
                                     <div className={styles.box_intro}>
                                         <div className={styles.proj_ex}>
                                             <h4>{project.name}</h4>

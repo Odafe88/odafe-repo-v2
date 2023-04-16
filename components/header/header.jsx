@@ -6,7 +6,7 @@ const Header = () => {
     return (
         <nav className={styles.header_container}>
             <p><Link href="/about">/about.</Link></p>
-            <p><Link href="/blog">/blog.</Link></p>
+            <p><Link href="https://odafe.hashnode.dev/">/blog.</Link></p>
             <p><Link href="/projects">/projects.</Link></p>
         </nav>
     )

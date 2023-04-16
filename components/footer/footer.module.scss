@@ -1,0 +1,18 @@
+.footer_container {
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 20px;
+    width: 100%;
+    padding: 20px 10px;
+    z-index: 9999;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+    .footer_link {
+        cursor: pointer;
+        text-decoration: underline;
+    }
+}
