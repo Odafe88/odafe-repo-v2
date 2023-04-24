@@ -4,7 +4,7 @@ import { HomeBtn } from '../../components'
 
 const AboutPage = () => {
     return (
-        <div className={styles.about_container}>
+        <section className={styles.about_container}>
             <HomeBtn />
             <div className={styles.about_wrapper}>
                 <div className={styles.header_cont}>
@@ -13,10 +13,12 @@ const AboutPage = () => {
                     </h1>
                 </div>
                 <div className={styles.about_box}>
+                    <p>
 
+                    </p>
                 </div>
             </div>
-        </div >
+        </section >
     )
 }
 

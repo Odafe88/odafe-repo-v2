@@ -8,23 +8,23 @@ const ProjectsPage = () => {
         {
             name: "GraphBlog",
             excerpt: "A blog site to upload and read stories in real time",
-            live: "",
-            gh: "",
+            live: "http://graph-blog-weld.vercel.app/",
+            gh: "https://github.com/Odafe88/graph-blog",
             tools: "Next.Js, Tailwindcss, graphql, graphCMS"
         },
         {
             name: "King's CLothing",
             excerpt: "An e-commerce site",
-            live: "",
-            gh: "",
+            live: "http://crwn-clothing-odafe88.vercel.app/",
+            gh: "https://github.com/Odafe88/crwn-clothing",
             tools: "React, Sass, Redux, React Router"
         },
         {
             name: "Twitgram",
             excerpt: "A real-time social media app",
             live: "",
-            gh: "",
-            tools: ""
+            gh: "https://github.com/Odafe88/chat_mern",
+            tools: "ReactJS, NodeJs, ExpressJs, MongoDB"
         },
     ]
     return (

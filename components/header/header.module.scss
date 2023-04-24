@@ -1,3 +1,15 @@
+@mixin tablet {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media screen and (max-width: 480px) {
+        @content;
+    }
+}
+
 .header_container {
     position: static;
     margin-left: 4rem;
@@ -8,6 +20,13 @@
     // background-color: #111111;
     border-left: solid 3px #696969;
 
+    @include mobile {
+        padding: 0;
+        margin-left: 0;
+        border: 0;
+        width: 50%;
+    }
+
     p {
         padding: 10px 30px;
         font-size: 1.8rem;
@@ -16,6 +35,11 @@
         cursor: pointer;
         color: #eeeeee86;
         transition: all ease-out 0.2s;
+
+        @include mobile {
+            padding: 10px 0;
+            font-size: 1.5rem;
+        }
 
         &:hover {
             color: #EEEEEE;
