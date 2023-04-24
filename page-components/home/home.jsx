@@ -9,7 +9,7 @@ const HomePage = () => {
             <div className={styles.home_intro}>
                 <div>
                     <h1>
-                        Odafe<span>.</span> <span className={styles.name_cont}>Alaiya</span>
+                        Odafe<span className={styles.stop_cont}>.</span> <span className={styles.name_cont}>Alaiya</span>
                     </h1>
                     <h5>Web developer</h5>
                 </div>
