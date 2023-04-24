@@ -1,3 +1,15 @@
+@mixin tablet {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media screen and (max-width: 480px) {
+        @content;
+    }
+}
+
 .proj_page_container {
     position: relative;
     background-color: #000000;
@@ -8,25 +20,49 @@
     padding: 10px 25px;
     font-family: 'Poppins', sans-serif;
 
+    @include mobile {
+        padding: 10px;
+    }
+
     .proj_wrapper {
         margin-left: 150px;
+
+        @include mobile {
+            margin-left: 0px;
+        }
 
         .header_cont {
             padding: 2rem;
 
+            @include mobile {
+                padding: 10px;
+            }
+
             h1 {
                 font-size: 4rem;
                 margin: 0;
+
+                @include mobile {
+                    font-size: 3rem;
+                }
             }
 
             p {
                 font-size: 16px;
                 margin: 0;
+
+                @include mobile {
+                    font-size: 14px;
+                }
             }
         }
 
         .proj_cont {
             padding: 0 2rem;
+
+            @include mobile {
+                padding: 10px;
+            }
 
             .proj_box {
                 width: 60%;
@@ -35,6 +71,10 @@
                 padding: 1rem;
                 margin: 0.5rem 0;
                 transition: all ease-out 0.2s;
+
+                @include mobile {
+                    width: 100%;
+                }
 
                 &:hover {
                     background-color: #111111;
@@ -49,12 +89,15 @@
                     margin: 0;
                     padding: 10px 0;
                     font-size: 14px;
+
+                    @include mobile {
+                        font-size: 12px;
+                    }
                 }
 
                 .box_intro {
                     position: relative;
                     display: flex;
-                    align-items: center;
                     justify-content: space-between;
 
                     .proj_ex {
@@ -63,6 +106,10 @@
                         h4 {
                             font-size: 1.1rem;
                             margin: 0;
+
+                            @include mobile {
+                                font-size: 1rem;
+                            }
                         }
 
                         p {
@@ -78,6 +125,10 @@
                             border-radius: 5px;
                             margin: 0 0.25rem;
                             transition: all ease-out 0.2s;
+
+                            @include mobile {
+                                font-size: 1rem;
+                            }
 
                             &:hover {
                                 background-color: #343434;

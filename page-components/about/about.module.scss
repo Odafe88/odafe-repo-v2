@@ -1,3 +1,15 @@
+@mixin tablet {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media screen and (max-width: 480px) {
+        @content;
+    }
+}
+
 .about_container {
     position: relative;
     background-color: #000000;
@@ -8,20 +20,46 @@
     padding: 10px 25px;
     font-family: 'Poppins', sans-serif;
 
+    @include mobile {
+        padding: 10px;
+    }
+
     .about_wrapper {
         margin-left: 150px;
+
+        @include mobile {
+            margin: 0;
+        }
 
         .header_cont {
             padding: 2rem;
 
+            @include mobile {
+                padding: 10px;
+            }
+
             h1 {
                 font-size: 4rem;
                 margin: 0;
+
+                @include mobile {
+                    font-size: 3rem;
+                }
             }
 
             p {
                 font-size: 16px;
                 margin: 0;
+
+                @include mobile {
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .about_box {
+            @include mobile {
+                padding: 10px;
             }
         }
     }
