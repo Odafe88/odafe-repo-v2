@@ -32,7 +32,7 @@ const ProjectsPage = () => {
             <HomeBtn />
             <div className={styles.proj_wrapper}>
                 <div className={styles.header_cont}>
-                    <h1>Projects</h1>
+                    <h1>Projects.</h1>
                     <p>A few noteworthy things I've built:</p>
                 </div>
                 <div className={styles.proj_cont}>

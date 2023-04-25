@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from "./about.module.scss"
-import { HomeBtn } from '../../components'
+import { HomeBtn, Footer } from '../../components'
 import Link from 'next/link'
 
 const AboutPage = () => {
@@ -10,12 +10,12 @@ const AboutPage = () => {
             <div className={styles.about_wrapper}>
                 <div className={styles.header_cont}>
                     <h1>
-                        About
+                        About.
                     </h1>
                 </div>
                 <div className={styles.about_box}>
                     <p className={styles.first_p}>
-                        I'm a Frontend Developer from Lagos, Nigeria. I am currently transitioning into Fullstack development with the help of the <Link href="https://www.coursera.org/professional-certificates/meta-back-end-developer#courses" className={styles.about_p_link}>Meta Back-end Developer course</Link>.
+                        My name is Odafe Alaiya. I'm a Frontend Developer from Lagos, Nigeria. I am currently transitioning into Fullstack development with the help of the <Link href="https://www.coursera.org/professional-certificates/meta-back-end-developer#courses" className={styles.about_p_link}>Meta Back-end Developer course</Link>.
                         I began transitioning to Fullstack development primarily because I was interested in understanding the structure behind the structure. Also it has helped me broaden my skillset in order to add value and Insight in areas I would have had no understanding.
                     </p>
                     <p>
@@ -48,13 +48,14 @@ const AboutPage = () => {
                         <code>MongoDB</code>
                     </div>
                     <p>
-                        I share experiences on the Technologies and concepts I use n my blog <Link className={styles.about_p_link} href="https://odafe.hashnode.dev/">here</Link>.
+                        You can check some of my projects out <Link className={styles.about_p_link} href="/projects">here</Link>.<br></br>Also, I share experiences on the Technologies and concepts I use on my blog <Link className={styles.about_p_link} href="https://odafe.hashnode.dev/">here</Link>.
                     </p>
                     <p>
-                        Also You can reach me on <Link className={styles.about_p_link} href="https://twitter.com/odafetoearth">Twitter</Link> and <Link className={styles.about_p_link} href="https://www.linkedin.com/in/odafe-alaiya-598115203/">LinkenIn</Link>.
+                        You can reach me on social media through <Link className={styles.about_p_link} href="https://twitter.com/odafetoearth">Twitter</Link> or <Link className={styles.about_p_link} href="https://www.linkedin.com/in/odafe-alaiya-598115203/">LinkenIn</Link>.
                     </p>
                 </div>
             </div>
+            <Footer />
         </section >
     )
 }

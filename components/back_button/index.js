@@ -6,9 +6,11 @@ import { HiArrowLeft } from "react-icons/hi"
 const HomeBtn = () => {
     return (
         <div className={styles.btn_cont}>
-            <Link href="/" className={styles.link_box}>
-                <HiArrowLeft /> Home
-            </Link>
+            <button className={styles.button_box}>
+                <Link className={styles.link_box} href="/">
+                    <HiArrowLeft /> Home
+                </Link>
+            </button>
         </div>
     )
 }
